@@ -7,6 +7,7 @@ class App extends Component {
   displayUserInformation() {
     const auth = new Auth();
     if (auth.isLoggedIn()) {
+      console.log("Hi you are logged in");
       console.log(auth.currentUser());
       return (
         <div>
